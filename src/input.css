@@ -1,35 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-
 @import "tailwindcss";
 
-
-
 @theme {
-
     --font-inter: "Inter", sans-serif;
-
     --breakpoint-*: initial;
-
     --breakpoint-sm: 576px;
-
     --breakpoint-md: 768px;
-
     --breakpoint-lg: 992px;
-
     --breakpoint-xl: 1280px;
-
+    /* Colors */
+    --color-darkMain: #192335;
+    --color-secondary: #25C6DA;
+    --color-btnColor: #2F57EF;
+    --color-newsletterBg: #00D09C;
+    /* Background Images */
+    --background-image-vector: url('../src/images/herobg.png');
+    --background-image-footer: url('../src/images/footerbg.png');
 }
 
-
-
 @layer utility {
-
     .container {
-
         margin: auto;
-
+        padding: 0 1rem;
     }
+}
 
+.header-container {
+    @apply max-w-[1664px] mx-auto px-4
 }
