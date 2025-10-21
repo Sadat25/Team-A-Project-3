@@ -11,8 +11,17 @@
     --breakpoint-xl: 1280px;
 }
 
-@layer utility {
-    .container {
-        margin: auto;
-    }
+@utility container {
+    margin-inline: auto;
+}
+
+
+
+.bg {
+    background-image: url('../src/images/Footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
 }
