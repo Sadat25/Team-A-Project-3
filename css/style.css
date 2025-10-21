@@ -253,9 +253,6 @@
   .table {
     display: table;
   }
-  .h-7 {
-    height: calc(var(--spacing) * 7);
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -264,9 +261,6 @@
   }
   .min-h-40 {
     min-height: calc(var(--spacing) * 40);
-  }
-  .w-7 {
-    width: calc(var(--spacing) * 7);
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -305,6 +299,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -399,9 +396,6 @@
   }
   .bg-vector {
     background-image: var(--background-image-vector);
-  }
-  .bg-contain {
-    background-size: contain;
   }
   .bg-cover {
     background-size: cover;
@@ -648,6 +642,7 @@
 .header-container {
   margin-inline: auto;
   max-width: 1664px;
+  padding-inline: calc(var(--spacing) * 4);
 }
 @property --tw-translate-x {
   syntax: "*";
