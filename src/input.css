@@ -13,6 +13,13 @@
 
 @layer utility {
     .container {
-        margin: auto;
+        margin-inline: auto;
     }
+}
+
+.HeroBackground{
+    background-image: url(../Images/BannerLine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
