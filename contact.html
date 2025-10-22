@@ -10,266 +10,328 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-icon");
+      const root = document.documentElement;
+  
+      toggle.addEventListener("click", () => {
+        const isDark = root.getAttribute("data-theme") === "dark";
+  
+        if (isDark) {
+          root.removeAttribute("data-theme");
+          icon.classList.replace("fa-sun", "fa-moon");
+        } else {
+          root.setAttribute("data-theme", "dark");
+          icon.classList.replace("fa-moon", "fa-sun");
+        }
+      });
+    });
+  </script>
+  
+  
+  
+  
 
 <body>
-    <section class="bg-[#F3F6FB] py-2">
+    <section class="bg-[#F3F6FB] dark:bg-[#0F172A] text-[#192335] dark:text-white py-2">
+        <section class="bg-[#F3F6FB] py-2 dark:bg-[#0F172A]">
 
-        <div class="container mx-auto ">
-            <div class="flex flex-col  sm:flex-row sm:justify-between gap-2 sm:gap-0"> 
-                
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h2 class="font-inter text-[#192335] text-[17px]">6391 Elgin St. Celina, 10299</h2>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2"> 
-                    <p class="font-inter text-[#192335] text-[17px]">
-                        <i class="fa-solid fa-phone"></i>(629) 555-0129</p>
-                    <p class="font-inter text-[#192335] text-[17px]">
-                        <i class="fa-solid fa-envelope"></i>info@example.com</p>
-                </div>
-                
-            </div>
+            <div class="container mx-auto ">
+                <div class="flex flex-col  sm:flex-row sm:justify-between gap-2 sm:gap-0">
     
-    
-        </div>
-    </section>
-
-    <!-- Navbar start -->
-    <section class="py-2 bg-gray-200"> <div class="container mx-auto">
-        <div class="w-full flex flex-wrap md:flex-nowrap items-center justify-between">
-
-            <div class="w-6/12 md:w-2/12"> 
-                <img class="cursor-pointer" src="image/Logo.png" alt="Logo">
-            </div>
-
-            <div class="w-full md:w-6/12 flex justify-center md:justify-center"> 
-                
-                <ul class="flex flex-col md:flex-row gap-2 md:gap-4 p-0 pt-2 md:p-0"> 
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">Home <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">About us <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">Service <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">Projects <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">Blog <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">page <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                    <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer">Contact <i
-                            class="fa-solid fa-chevron-down"></i></li>
-                </ul>
-            </div>
-
-            <div class="w-6/12 md:w-4/12 flex items-center justify-end">
-                <input class="border hidden md:block w-full max-w-[280px] h-[50px] px-4" type="text" placeholder="Search">
-                <div class="flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-magnifying-glass px-4 py-4 md:px-8 bg-[#25C6DA] text-[18px] text-white font-bold cursor-pointer"></i>
-                    <i class="fa-solid fa-cart-shopping hidden md:inline-block px-8 py-4 bg-[#25C6DA] text-[18px] text-white font-bold cursor-pointer"></i>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-    <!-- navpart end -->
-
-     <!-- contact banner part start -->
-     <section class="bg-[#F3F6FB] py-[100px] text-center">
-        <div class="container mx-auto">
-            <h2 class="font-inter text-[36px] font-bold">Contact us</h2>
-            
-            <p class="font-inter text-[21px] font-bold cursor-pointer"> Home > Contact us</p>
-        </div>
-    </section>
-     <!-- contact banner part end -->
-
-      <!-- contact info + map section start -->
-      <section class="py-[100px] bg-white relative mt-[60px]">
-        <div class="container mx-auto">
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mt-[-100px] relative z-10">
-                
-                <div class="bg-white shadow-xl rounded-lg p-8 pt-12 relative"> 
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#2563EB] p-4 rounded-md shadow-lg">
-                        <i class="fa-solid fa-phone text-white text-2xl"></i>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot dark:text-white"></i>
+                        <h2 class="font-inter text-[#192335] text-[17px] dark:text-white">6391 Elgin St. Celina, 10299</h2>
                     </div>
-                    
-                    <h3 class="mt-4 font-inter text-[21px] font-bold text-[#192335]">Phone Number</h3>
-                    <p class="text-[#666] font-inter text-[16px] mt-2 ">
-                        012 345 678 9101<br>012 345 678 9101
+    
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 ">
+                        <p class="font-inter text-[#192335] text-[17px] dark:text-white">
+                            <i class="fa-solid fa-phone dark:text-white"></i>(629) 555-0129
+                        </p>
+                        <p class="font-inter text-[#192335] text-[17px] dark:text-white">
+                            <i class="fa-solid fa-envelope dark:text-white"></i>info@example.com
+                        </p>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        </section>
+    
+        <!-- Navbar start -->
+        <section class="py-2 bg-gray-200 dark:bg-[#0F172A] flex items-center ">
+            <div class="container mx-auto  ">
+                <div class="w-full flex flex-wrap md:flex-nowrap items-center justify-between">
+    
+                    <div class="w-6/12 md:w-2/12">
+                        <img class="cursor-pointer" src="image/Logo.png" alt="Logo">
+                    </div>
+    
+                    <div class="w-full md:w-6/12 flex justify-center md:justify-center">
+    
+                        <ul class="flex flex-col md:flex-row gap-2 md:gap-4 p-0 pt-2 md:p-0">
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                Home <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                About us <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                Service <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                Projects <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                Blog <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                page <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                            <li class="items-center gap-1 font-inter text-[16px] text-[#192335] font-medium cursor-pointer dark:text-white">
+                                Contact <i class="fa-solid fa-chevron-down dark:text-white"></i></li>
+                        </ul>
+                    </div>
+    
+                    <div class="w-6/12 md:w-4/12 flex items-center justify-end">
+                        <input class="border hidden md:block w-full max-w-[280px] h-[50px] px-4" type="text"
+                            placeholder="Search">
+                        <div class="flex items-center justify-center gap-2">
+                            <i
+                                class="fa-solid fa-magnifying-glass px-4 py-4 md:px-8 bg-[#25C6DA] text-[18px] text-white font-bold cursor-pointer"></i>
+                            <i
+                                class="fa-solid fa-cart-shopping hidden md:inline-block px-8 py-4 bg-[#25C6DA] text-[18px] text-white font-bold cursor-pointer"></i>
+                        </div>
+                    </div>
+                  
+    
+                </div>
+              
+            </div>
+            <button id="theme-toggle"
+            class="ml-3 mr-[20px] md:ml-4 w-10 h-10 flex items-center justify-center rounded-full 
+                   bg-[#25C6DA] text-white text-xl transition-all duration-300 hover:scale-110 shadow-md">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+          </button>
+        </section>
+        <!-- navpart end -->
+    
+        <!-- contact banner part start -->
+        <section class="bg-[#F3F6FB] dark:bg-[#0F172A] py-[100px] text-center">
+            <div class="container mx-auto">
+                <h2 class="font-inter text-[36px] font-bold">Contact us</h2>
+    
+                <p class="font-inter text-[21px] font-bold cursor-pointer"> Home > Contact us</p>
+            </div>
+        </section>
+        <!-- contact banner part end -->
+    
+        <!-- contact info + map section start -->
+        <section class="py-[100px] bg-white relative mt-[60px] dark:bg-black">
+            <div class="container mx-auto">
+    
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mt-[-100px] relative z-10">
+    
+                <div class="bg-white  shadow-xl rounded-lg p-8 pt-12 relative">
+                        <div
+                            class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#2563EB] p-4 rounded-md shadow-lg">
+                            <i class="fa-solid fa-phone text-white text-2xl"></i>
+                        </div>
+    
+                        <h3 class="mt-4 font-inter text-[21px] font-bold text-[#192335]">Phone Number</h3>
+                        <p class="text-[#666] font-inter text-[16px] mt-2 ">
+                            012 345 678 9101<br>012 345 678 9101
+                        </p>
+                    </div>
+    
+                    <div class="bg-white shadow-xl rounded-lg p-8 pt-12 relative">
+                        <div
+                            class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#2563EB] p-4 rounded-md shadow-lg">
+                            <i class="fa-solid fa-envelope text-white text-2xl"></i>
+                        </div>
+    
+                        <h3 class="mt-4 font-inter text-[21px] font-bold text-[#192335]">Email Address</h3>
+                        <p class="text-[#666] font-inter text-[16px] mt-2 ">
+                            abcd@gmail.com<br>efgh@gmail.com
+                        </p>
+                    </div>
+    
+                    <div class="bg-white shadow-xl rounded-lg p-8 pt-12 relative">
+                        <div
+                            class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#2563EB] p-4 rounded-md shadow-lg">
+                            <i class="fa-solid fa-house text-white text-2xl"></i>
+                        </div>
+    
+                        <h3 class="mt-4 font-inter text-[21px] font-bold text-[#192335]">Office Address</h3>
+                        <p class="text-[#666] font-inter text-[16px] mt-2">
+                            66 Broklyant, New York India<br>3269 Road.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="mt-[60px] md:mt-[80px] border border-gray-300 rounded-lg overflow-hidden relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.188578265286!2d90.42123987493187!3d23.812179378635757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a8d69cd0f7%3A0x992e8e44e92e9aef!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1694095360864!5m2!1sen!2sbd"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <!-- contact info + map section end -->
+    
+        <!-- contact form part start -->
+        <section class="py-20">
+            <div class="container mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
+    
+                <div class="w-full md:w-5/12 text-center">
+                    <p class="text-[#2563EB] font-inter text-[16px] font-medium mb-2 dark:text-white">| Contact us</p>
+                    <h2 class="text-[#0B0F19] text-[32px] font-bold font-inter leading-snug mb-4 dark:text-white">
+                        Do you have any question?
+                    </h2>
+                    <p class="text-[#666] font-inter text-[16px] leading-relaxed mb-6 dark:text-white">
+                        For your car we will do everything — advice, repairs and maintenance.
+                        We are the preferred choice by many car owners because of our quality service.
                     </p>
+    
+                    <div class="flex gap-3 justify-center">
+                        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                            <i class="fa-brands fa-facebook-f text-[#2563EB]"></i>
+                        </div>
+                        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                            <i class="fa-brands fa-twitter text-[#2563EB]"></i>
+                        </div>
+                        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                            <i class="fa-brands fa-instagram text-[#2563EB]"></i>
+                        </div>
+                        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                            <i class="fa-brands fa-pinterest text-[#2563EB]"></i>
+                        </div>
+                    </div>
                 </div>
     
-                <div class="bg-white shadow-xl rounded-lg p-8 pt-12 relative">
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#2563EB] p-4 rounded-md shadow-lg">
-                        <i class="fa-solid fa-envelope text-white text-2xl"></i>
-                    </div>
-                    
-                    <h3 class="mt-4 font-inter text-[21px] font-bold text-[#192335]">Email Address</h3>
-                    <p class="text-[#666] font-inter text-[16px] mt-2 ">
-                        abcd@gmail.com<br>efgh@gmail.com
-                    </p>
+                <div class="w-full md:w-7/12 bg-white shadow-sm rounded-lg p-8">
+                    <form class="space-y-4">
+    
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none dark:text-black" type="text"
+                                placeholder="Your Name">
+                            <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none dark:text-black" type="email"
+                                placeholder="Your Email">
+                        </div>
+    
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+                            <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none dark:text-black" type="text"
+                                placeholder="Phone Number">
+                            <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none dark:text-black" type="text"
+                                placeholder="Subject">
+                        </div>
+    
+                        <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none dark:text-black" type="text"
+                            placeholder="Service">
+    
+                        <textarea class="w-full h-[120px] bg-[#F3F6FB] px-4 py-3 rounded focus:outline-none resize-none dark:text-black"
+                            placeholder="Your Message"></textarea>
+    
+                        <button
+                            class="w-full  bg-[#2563EB] text-white font-inter font-medium h-[50px] rounded hover:bg-[#1d4ed8] transition">
+                            Submit Now
+                        </button>
+                    </form>
                 </div>
     
-                <div class="bg-white shadow-xl rounded-lg p-8 pt-12 relative">
-                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-[#2563EB] p-4 rounded-md shadow-lg">
-                        <i class="fa-solid fa-house text-white text-2xl"></i>
-                    </div>
-                    
-                    <h3 class="mt-4 font-inter text-[21px] font-bold text-[#192335]">Office Address</h3>
-                    <p class="text-[#666] font-inter text-[16px] mt-2">
-                        66 Broklyant, New York India<br>3269 Road.
-                    </p>
-                </div>
             </div>
+        </section>
+        <!-- contact form part end -->
     
-            <div class="mt-[60px] md:mt-[80px] border border-gray-300 rounded-lg overflow-hidden relative">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.188578265286!2d90.42123987493187!3d23.812179378635757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a8d69cd0f7%3A0x992e8e44e92e9aef!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1694095360864!5m2!1sen!2sbd"
-                    width="100%"
-                    height="400"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </div>
-    </section>
-  <!-- contact info + map section end -->
-
-   <!-- contact form part start -->
-   <section class="py-20"> <div class="container mx-auto flex flex-col md:flex-row items-start justify-between gap-10">
-      
-    <div class="w-full md:w-5/12 text-center">
-      <p class="text-[#2563EB] font-inter text-[16px] font-medium mb-2">| Contact us</p>
-      <h2 class="text-[#0B0F19] text-[32px] font-bold font-inter leading-snug mb-4">
-        Do you have any question?
-      </h2>
-      <p class="text-[#666] font-inter text-[16px] leading-relaxed mb-6">
-        For your car we will do everything — advice, repairs and maintenance.
-        We are the preferred choice by many car owners because of our quality service.
-      </p>
-
-      <div class="flex gap-3 justify-center">
-        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-          <i class="fa-brands fa-facebook-f text-[#2563EB]"></i>
-        </div>
-        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-          <i class="fa-brands fa-twitter text-[#2563EB]"></i>
-        </div>
-        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-          <i class="fa-brands fa-instagram text-[#2563EB]"></i>
-        </div>
-        <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-          <i class="fa-brands fa-pinterest text-[#2563EB]"></i>
-        </div>
-      </div>
-    </div>
-
-    <div class="w-full md:w-7/12 bg-white shadow-sm rounded-lg p-8">
-      <form class="space-y-4">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none" type="text" placeholder="Your Name">
-          <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none" type="email" placeholder="Your Email">
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none" type="text" placeholder="Phone Number">
-          <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none" type="text" placeholder="Subject">
-        </div>
-
-        <input class="w-full h-[50px] bg-[#F3F6FB] px-4 rounded focus:outline-none" type="text" placeholder="Service">
-
-        <textarea class="w-full h-[120px] bg-[#F3F6FB] px-4 py-3 rounded focus:outline-none resize-none" placeholder="Your Message"></textarea>
-
-        <button class="w-full bg-[#2563EB] text-white font-inter font-medium h-[50px] rounded hover:bg-[#1d4ed8] transition">
-          Submit Now
-        </button>
-      </form>
-    </div>
-
-  </div>
-</section>
-  <!-- contact form part end -->
-
-  <!-- footer part start -->
-  <footer class=" bg-[url('../image/Footer.png')] bg-cover bg-center py-[50px] mt-[30px]">
-    <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-            
-            <div class="w-full">
-                <img src="image/Logo.png" alt="Logo" class="mb-4">
-                <p class="font-inter text-[18px] text-[#192335] mb-4">
-                    Lorem Ipsum is simply dummy texis the printing Lorem Ips is simply dummy text
-                </p>
-                <div class="flex gap-3">
-                    <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-                        <i class="fa-brands fa-facebook-f text-[#2563EB] cursor-pointer"></i>
+        <!-- footer part start -->
+        <footer class=" bg-[url('../image/Footer.png')] bg-cover bg-center py-[50px] mt-[30px]">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+    
+                    <div class="w-full">
+                        <img src="image/Logo.png" alt="Logo" class="mb-4">
+                        <p class="font-inter text-[18px] text-[#192335] mb-4">
+                            Lorem Ipsum is simply dummy texis the printing Lorem Ips is simply dummy text
+                        </p>
+                        <div class="flex gap-3">
+                            <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                                <i class="fa-brands fa-facebook-f text-[#2563EB] cursor-pointer"></i>
+                            </div>
+                            <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                                <i class="fa-brands fa-twitter text-[#2563EB] cursor-pointer"></i>
+                            </div>
+                            <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                                <i class="fa-brands fa-instagram text-[#2563EB] cursor-pointer"></i>
+                            </div>
+                            <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
+                                <i class="fa-brands fa-pinterest text-[#2563EB] cursor-pointer"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-                        <i class="fa-brands fa-twitter text-[#2563EB] cursor-pointer"></i>
+    
+                    <div class="w-full">
+                        <h2 class="font-inter text-[21px] font-bold text-[#192335] mb-4">All links</h2>
+                        <ul class="space-y-3">
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Credit industrys
+                            </li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Credit
+                                Consulting</li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Business Credit industry</li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Finance industry</li>
+                        </ul>
                     </div>
-                    <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-                        <i class="fa-brands fa-instagram text-[#2563EB] cursor-pointer"></i>
+    
+                    <div class="w-full">
+                        <h2 class="font-inter text-[21px] font-bold text-[#192335] mb-4">More Service</h2>
+                        <ul class="space-y-3">
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Ui Design</li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Ux Design</li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Digital Marketing</li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Video Editing
+                            </li>
+                            <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i
+                                    class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Pc Repairs</li>
+                        </ul>
                     </div>
-                    <div class="w-[35px] h-[35px] flex items-center justify-center bg-white shadow-md rounded">
-                        <i class="fa-brands fa-pinterest text-[#2563EB] cursor-pointer"></i>
+    
+                    <div class="w-full">
+                        <h2 class="font-inter text-[21px] font-bold text-[#192335] mb-4">Get In Touch</h2>
+                        <ul class="space-y-3">
+                            <li class="font-inter text-[17px] text-[#192335]"><i
+                                    class="fa-solid fa-envelope mr-2 text-[#2563EB]"></i> E-mail: example@mail.com</li>
+                            <li class="font-inter text-[17px] text-[#192335]"><i
+                                    class="fa-solid fa-phone mr-2 text-[#2563EB]"></i> Call: +125 856 632</li>
+                            <li class="font-inter text-[17px] text-[#192335]"><i
+                                    class="fa-solid fa-location-dot mr-2 text-[#2563EB]"></i> Location: 3 Number Road ,C
+                                block, Housing,USA</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-            <div class="w-full">
-                <h2 class="font-inter text-[21px] font-bold text-[#192335] mb-4">All links</h2>
-                <ul class="space-y-3">
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Credit industrys</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Credit Consulting</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Business Credit industry</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Finance industry</li>
-                </ul>
-            </div>
-
-            <div class="w-full">
-                <h2 class="font-inter text-[21px] font-bold text-[#192335] mb-4">More Service</h2>
-                <ul class="space-y-3">
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Ui Design</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Ux Design</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB]"></i> Digital Marketing</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Video Editing</li>
-                    <li class="font-inter text-[17px] text-[#192335] cursor-pointer"><i class="fa-solid fa-arrow-right mr-2 text-[#2563EB] cursor-pointer"></i> Pc Repairs</li>
-                </ul>
-            </div>
-
-            <div class="w-full">
-                <h2 class="font-inter text-[21px] font-bold text-[#192335] mb-4">Get In Touch</h2>
-                <ul class="space-y-3">
-                    <li class="font-inter text-[17px] text-[#192335]"><i class="fa-solid fa-envelope mr-2 text-[#2563EB]"></i> E-mail: example@mail.com</li>
-                    <li class="font-inter text-[17px] text-[#192335]"><i class="fa-solid fa-phone mr-2 text-[#2563EB]"></i> Call: +125 856 632</li>
-                    <li class="font-inter text-[17px] text-[#192335]"><i class="fa-solid fa-location-dot mr-2 text-[#2563EB]"></i> Location: 3 Number Road ,C block, Housing,USA</li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex mt-[120px] flex-col  sm:flex-row sm:justify-between gap-2 sm:gap-0"> 
-                
-            <div class="flex items-center gap-2">
-                
-                <h2 class="font-inter text-[#192335] text-[17px]">© Yoursitename  2023 | All Rights Reserved</h2>
-            </div>
-            
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2"> 
-                <p class="font-inter text-[#192335] text-[17px]">
-                    Trams & Condition</p>
-                <p class="font-inter text-[#192335] text-[17px]">
-                    Privacy Policy</p>
-                    <p class="font-inter text-[#192335] text-[17px]">
-                        Contact Us</p>
-            </div>
-    </div>
-</footer>
+                <div class="flex mt-[120px] flex-col  sm:flex-row sm:justify-between gap-2 sm:gap-0">
+    
+                    <div class="flex items-center gap-2">
+    
+                        <h2 class="font-inter text-[#192335] text-[17px]">© Yoursitename 2023 | All Rights Reserved</h2>
+                    </div>
+    
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                        <p class="font-inter text-[#192335] text-[17px]">
+                            Trams & Condition</p>
+                        <p class="font-inter text-[#192335] text-[17px]">
+                            Privacy Policy</p>
+                        <p class="font-inter text-[#192335] text-[17px]">
+                            Contact Us</p>
+                    </div>
+                </div>
+        </footer>
+      </section>
+   
 </body>
 
 </html>
