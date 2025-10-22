@@ -1,134 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escolat</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-
-    <header class=" flex justify-between items-center px-8">
-        <div class="flex gap-10">
-
-            <p class="flex items-center"> <span class="p-1.5"><img class="h-3 w-3 " src="./Images/mail.png"
-                        alt=""></span> info@example.com</p>
-            <p class="flex items-center"> <span class="p-1.5"><img class="h-3 w-3 " src="./Images/location.png"
-                        alt=""></span> 6391 Elgin St. Celina, 10299</p>
+  <body>
+    <header class="flex justify-between items-center px-8">
+      <div class="flex gap-10">
+        <p class="flex items-center">
+          <span class="p-1.5"
+            ><img class="h-3 w-3" src="./Images/mail.png" alt=""
+          /></span>
+          info@example.com
+        </p>
+        <p class="flex items-center">
+          <span class="p-1.5"
+            ><img class="h-3 w-3" src="./Images/location.png" alt=""
+          /></span>
+          6391 Elgin St. Celina, 10299
+        </p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div>
+          <button
+            class="bg-blue-600 flex p-3 text-white cursor-pointer items-center"
+          >
+            Get a quote
+            <span class="p-1.5"
+              ><img class="h-3 w-3" src="./Images/arrow.png" alt=""
+            /></span>
+          </button>
         </div>
-        <div class="flex   items-center gap-4">
-            <div>
-                <button class="bg-blue-600 flex p-3 text-white cursor-pointer items-center">Get a quote <span
-                        class="p-1.5"><img class="h-3 w-3 " src="./Images/arrow.png" alt=""></span> </button>
-            </div>
-            <div class=" items-center">
-                <img src="./Images/social.png" alt="">
-            </div>
+        <div class="items-center">
+          <img src="./Images/social.png" alt="" />
         </div>
+      </div>
     </header>
 
-    <nav class=" flex px-8">
-        <div class="flex items-center gap-[180px]  w-[80%]">
-            <div>
-                <img class="h-[55px] w-[143px]" src="./Images/Logo.png" alt="">
-            </div>
-            <div >
-                <ul class="flex gap-8 font-semibold">
-                    <li class="cursor-pointer">Home</li>
-                    <li class="cursor-pointer">About</li>
-                    <li class="cursor-pointer">Courses</li>
-                    <li class="cursor-pointer">Pages</li>
-                    <li class="cursor-pointer">Blog</li>
-                    <li class="cursor-pointer">Contact</li>
-                </ul>
-            </div>
+    <nav class="flex px-8">
+      <div class="flex items-center gap-[180px] w-[80%]">
+        <div>
+          <img class="h-[55px] w-[143px]" src="./Images/Logo.png" alt="" />
         </div>
-        <div class="flex justify-end w-[20%]">
-            <img src="./Images/Contact.png" alt="">
+        <div>
+          <ul class="flex gap-8 font-semibold">
+            <li class="cursor-pointer"><a href="#"></a>Home</li>
+            <li class="cursor-pointer"><a href="#"></a>About Us</li>
+            <li class="cursor-pointer"><a href="#"></a>Services</li>
+            <li class="cursor-pointer"><a href="#"></a>Projects</li>
+            <li class="cursor-pointer"><a href="#"></a>Blog</li>
+            <li class="cursor-pointer"><a href="#"></a>Page</li>
+            <li class="cursor-pointer"><a href="#"></a>Contact</li>
+          </ul>
         </div>
-
-
-
+      </div>
+      <div class="flex justify-end w-[20%]">
+        <img src="./Images/Contact.png" alt="" />
+      </div>
     </nav>
-
 
     <!-- hero section  -->
 
-    <div class=" relative bg-center bg-cover bg-no-repeat " style="background-image: url('./Images/Hero.png') ">
-        <div class="container pt-[130px] pb-[100px]">
-            <div class="w-[532px] pt-5">
-                <h2 class="text-[#4ADA85] text-lg font-bold">Click Learn Thrive</h2>
-                <h1 class="text-white  text-[59px] leading-[71px] font-bold py-[17px]">Unlock your potential through education</h1>
-                <p class="text-white text-[17px] pb-7">
-                    Magnis viverra nisl rhoncus egestas rhoncus elit at. Massa volutpat eleifend pellentesque vivamus nulla
-                </p>
-                <button class="bg-[#F8BC26] px-7 rounded-lg py-4">Contact us</button>
-
-            </div>
+    <div
+      class="relative bg-center bg-cover bg-no-repeat"
+      style="background-image: url('./Images/Hero.png')"
+    >
+      <div class="container pt-[130px] pb-[100px]">
+        <div class="w-[532px] pt-5">
+          <h2 class="text-[#4ADA85] text-lg font-bold">Click Learn Thrive</h2>
+          <h1 class="text-white text-[59px] leading-[71px] font-bold py-[17px]">
+            Unlock your potential through education
+          </h1>
+          <p class="text-white text-[17px] pb-7">
+            Magnis viverra nisl rhoncus egestas rhoncus elit at. Massa volutpat
+            eleifend pellentesque vivamus nulla
+          </p>
+          <button class="bg-[#F8BC26] px-7 rounded-lg py-4">Contact us</button>
         </div>
+      </div>
     </div>
 
     <!-- building part -->
-    <div class="container ">
-        <p class="text-center text-lg text-[#2F57EF] mt-[90px]  font-bold">Top Popular Course</p>
-        <h3 class="text-[42px] font-bold text-center mb-[50px]">Building a better tomorrow</h3>
+    <div class="container">
+      <p class="text-center text-lg text-[#2F57EF] mt-[90px] font-bold">
+        Top Popular Course
+      </p>
+      <h3 class="text-[42px] font-bold text-center mb-[50px]">
+        Building a better tomorrow
+      </h3>
     </div>
-
 
     <div class="flex gap-7 justify-between container">
-
+      <div>
         <div>
-            <div>
-                <div class="bg-center rounded-t-sm bg-cover bg-no-repeat w-[410px]" style="background-image: url('./Images/person.jpg') " >
-                    <div class="pl-[22px] pt-[21px] pr-[275px] pb-[189px]">
-                        <div class="text-white text-[13px] bg-[#2F57EF] inline py-2.5 px-4 rounded-sm ">Development</div>
-                    </div>
-                </div>
-        
-                <!-- cl part -->
-                <div>
-                    <div class="p-10 bg-white ">
-                        <img src="./Images/crdpt2.png" alt="">
-                    </div>
-                </div>
+          <div
+            class="bg-center rounded-t-sm bg-cover bg-no-repeat w-[410px]"
+            style="background-image: url('./Images/person.jpg')"
+          >
+            <div class="pl-[22px] pt-[21px] pr-[275px] pb-[189px]">
+              <div
+                class="text-white text-[13px] bg-[#2F57EF] inline py-2.5 px-4 rounded-sm"
+              >
+                Development
+              </div>
             </div>
-        </div>
-             <div>
-            <div>
-                <div class="bg-center rounded-t-sm bg-cover bg-no-repeat w-[410px]" style="background-image: url('./Images/person.jpg') " >
-                    <div class="pl-[22px] pt-[21px] pr-[275px] pb-[189px]">
-                        <div class="text-white text-[13px] bg-[#2F57EF] inline py-2.5 px-4 rounded-sm ">Development</div>
-                    </div>
-                </div>
-        
-                <!-- cl part -->
-                <div>
-                    <div class="p-10 bg-white ">
-                        <img src="./Images/crdpt2.png" alt="">
-                    </div>
-                </div>
+          </div>
+
+          <!-- cl part -->
+          <div>
+            <div class="p-10 bg-white">
+              <img src="./Images/crdpt2.png" alt="" />
             </div>
+          </div>
         </div>
-             <div>
-            <div>
-                <div class="bg-center rounded-t-sm bg-cover bg-no-repeat w-[410px]" style="background-image: url('./Images/person.jpg') " >
-                    <div class="pl-[22px] pt-[21px] pr-[275px] pb-[189px]">
-                        <div class="text-white text-[13px] bg-[#2F57EF] inline py-2.5 px-4 rounded-sm ">Development</div>
-                    </div>
-                </div>
-        
-                <!-- cl part -->
-                <div>
-                    <div class="p-10 bg-white ">
-                        <img src="./Images/crdpt2.png" alt="">
-                    </div>
-                </div>
+      </div>
+      <div>
+        <div>
+          <div
+            class="bg-center rounded-t-sm bg-cover bg-no-repeat w-[410px]"
+            style="background-image: url('./Images/person.jpg')"
+          >
+            <div class="pl-[22px] pt-[21px] pr-[275px] pb-[189px]">
+              <div
+                class="text-white text-[13px] bg-[#2F57EF] inline py-2.5 px-4 rounded-sm"
+              >
+                Development
+              </div>
             </div>
+          </div>
+
+          <!-- cl part -->
+          <div>
+            <div class="p-10 bg-white">
+              <img src="./Images/crdpt2.png" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div>
+        <div>
+          <div
+            class="bg-center rounded-t-sm bg-cover bg-no-repeat w-[410px]"
+            style="background-image: url('./Images/person.jpg')"
+          >
+            <div class="pl-[22px] pt-[21px] pr-[275px] pb-[189px]">
+              <div
+                class="text-white text-[13px] bg-[#2F57EF] inline py-2.5 px-4 rounded-sm"
+              >
+                Development
+              </div>
+            </div>
+          </div>
+
+          <!-- cl part -->
+          <div>
+            <div class="p-10 bg-white">
+              <img src="./Images/crdpt2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-</body>
+    <!-- break  -->
 
+    <!-- ======goal======= -->
+    <section class="py-[60px]">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div class="w-[43%]">
+            <h5 class="font-inter font-bold text-lg text-[#2F57EF]">
+              Top Popular Course
+            </h5>
+            <h3 class="font-inter font-bold text-[38px] text-[#192335] py-8">
+              Knowledge is power education is the key
+            </h3>
+            <div class="py-11 pl-10 pr-13 bg-[#FCCC44] rounded-3xl">
+              <h5 class="text-[#192335] font-inter font-bold text-[21px]">
+                Education Is The Key
+              </h5>
+              <div class="flex gap-x-3 mt-[20px]">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div class="">
+                  <p class="font-inter text-[17px] text-[#192335]">
+                    education is the key
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-x-3 mt-[20px]">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div class="">
+                  <p class="font-inter text-[17px] text-[#192335]">
+                    A Whole Lot of Digital Love for Less
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-x-3 mt-[20px]">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div class="">
+                  <p class="font-inter text-[17px] text-[#192335]">
+                    Know what your target market wants and needs
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-x-3 mt-[20px]">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div class="">
+                  <p class="font-inter text-[17px] text-[#192335]">
+                    A Whole Lot of Digital Love for Less
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[54%]">
+            <div class="w-[75%] ml-auto">
+              <p class="text-[#192335] text-[17px]">
+                Education is the process of acquiring knowledge, skills, values,
+                and attitudes through various methods such as
+              </p>
+              <button
+                class="text-[#192335] font-medium text-[15px] border border-[#2F57EF] py-3 px-5 mt-4 mb-12 rounded-md"
+              >
+                Contact us
+              </button>
+            </div>
+            <img src="./Images/goalimage.png" alt="" class="h-[350px] w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======goal======= -->
+
+    <!-- education section -->
+
+    <!-- <section class=" relative bg-center bg-cover bg-no-repeat" style="background-image: url('./Images/education.png') ">
+        <div class="container ">
+            <p></p>
+        </div>
+    </section> -->
+
+    <section
+      class="relative bg-center bg-cover bg-no-repeat"
+      style="background-image: url('./Images/education.png')"
+    >
+      <div class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-blue-600 font-medium mb-4">Top Popular Course</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              Knowledge is power<br />education is the key
+            </h1>
+            <div class="bg-gray-200 w-full h-64 rounded-lg"></div>
+          </div>
+          <div>
+            <p class="text-gray-700 mb-6">
+              Education is the process of acquiring knowledge, skills,
+              values,<br />
+              and attitudes through various methods such
+            </p>
+            <button
+              class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-lg mb-8"
+            >
+              Contact Us
+            </button>
+            <div class="bg-white rounded-lg shadow-lg p-6 space-y-6">
+              <div class="flex gap-4">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-2">Parse Optional</h3>
+                  <p class="text-gray-600 text-sm">
+                    The goal of ecology is to understand how organisms interact
+                    with each other and their environment
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-2">Unbranded</h3>
+                  <p class="text-gray-600 text-sm">
+                    Ecologists use a variety of methods, such as field
+                    observations, experiments, and modeling, to study the
+                    complex
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img src="./Images/tikmark.png" alt="" class="h-4 w-4 mt-2" />
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-2">
+                    Nulla Iste Commodi
+                  </h3>
+                  <p class="text-gray-600 text-sm">
+                    Ecologists use a variety of methods, such as field
+                    observations, experiments, and modeling, to study the
+                    complex
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
