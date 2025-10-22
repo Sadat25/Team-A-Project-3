@@ -421,6 +421,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-\[60px\] {
+    padding-inline: 60px;
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -450,6 +453,9 @@
   }
   .py-\[45px\] {
     padding-block: 45px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
   }
   .py-\[60px\] {
     padding-block: 60px;
