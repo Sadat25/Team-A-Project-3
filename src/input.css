@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @import "tailwindcss";
+<<<<<<< HEAD
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 
+=======
+@custom-variant dark (&:where(.dark, .dark *));
+>>>>>>> f3847b1cb38fa2a0e792624a0c16e827656ae014
 
 @theme {
     --font-inter: "Inter", sans-serif;
