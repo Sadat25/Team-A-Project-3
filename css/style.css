@@ -804,6 +804,9 @@
   .text-\[42px\] {
     font-size: 42px;
   }
+  .text-\[300px\] {
+    font-size: 300px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -1157,6 +1160,11 @@
   .lg\:text-\[38px\] {
     @media (width >= 992px) {
       font-size: 38px;
+    }
+  }
+  .lg\:text-\[40px\] {
+    @media (width >= 992px) {
+      font-size: 40px;
     }
   }
   .lg\:placeholder\:text-base {
