@@ -21,7 +21,6 @@
 
 @layer utility {
     .container {
-        margin-inline: auto;
-        padding: 0 1rem;
+        margin: auto;
     }
 }
