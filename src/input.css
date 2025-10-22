@@ -21,24 +21,7 @@
 
 @layer utility {
     .container {
-        margin: auto;
+        margin-inline: auto;
         padding: 0 1rem;
     }
 }
-
-.header-container {
-    @apply max-w-[1664px] mx-auto px-4
-}
-
-
-
-.box{
-    width:410px ;
-    background-color: rgb(182, 229, 248);
-}
-
-.box1{
-    width: 410px;
-    background-color: rgb(174, 211, 226);
-}
-
