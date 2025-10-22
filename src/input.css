@@ -15,10 +15,24 @@
     margin-inline: auto;
 }
 
-
+body {
+    font-family: var(--font-inter);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .bg {
-    background-image: url('../src/images/Footer.png');
+    background-image: url('../src/Images/Footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+}
+
+.bannerImg {
+    background-image: url('../src/Images/BannerLine.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
