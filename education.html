@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link href="./css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-cyan-100 dark:bg-blue-100">
     <div class="container ">
      <div class="lg:flex lg:justify-between grid-cols-2">
         <img src="./Images/illu.png" alt="">
@@ -40,10 +40,13 @@
            <h2 class="text-[#2F57EF] text-[18px] font-bold font-inter ">Blog & Artical </h2>
            <h1 class="lg:text-[42px] font-inter lg:font-bold">Business strategy is the plan <span class="block">and actions</span> </h1>
          </div>
+         <div class="flex justify-center items-center mt-3">
+          <button id="btn" class="bg-blue-500 px-5 py-2 text-[28px] rounded-[5px] text-white  ">click</button>
+         </div>
 
-         <div class="lg:flex lg:justify-between grid-cols-3 mt-[51px]">
+         <div class="lg:flex lg:justify-between grid-cols-3 mt-[51px]  ">
 
-            <div class="w-[410px] shadow-xl  ">
+            <div class="w-[410px] shadow-xl box ">
                 <div class="relative">
                    <img src="./Images/book1.jpg" class="" alt="">
                    <div class="w-20 h-20 bg-[#2F57EF] absolute top-5 left-5 ">
@@ -70,7 +73,7 @@
                 </div>
               </div>
             </div>
-                        <div class="w-[410px] shadow-xl  ">
+               <div class="w-[410px] shadow-xl box  ">
                 <div class="relative">
                    <img src="./Images/book2.jpg" class="" alt="">
                    <div class="w-20 h-20 bg-[#2F57EF] absolute top-5 left-5 ">
@@ -97,7 +100,7 @@
                 </div>
               </div>
             </div>
-             <div class="w-[410px] shadow-xl  ">
+             <div class="w-[410px] shadow-xl box ">
                 <div class="relative">
                    <img src="./Images/book1.jpg" class="" alt="">
                    <div class="w-20 h-20 bg-[#2F57EF] absolute top-5 left-5 ">
@@ -132,7 +135,7 @@
 
     </div>
     <div style="background-image: url(./Images/Footer.png);" class=" w-full mt-[121px]  " >
-      
+  
      <div class="container pt-[95px] ">
       <div class="lg:flex lg:justify-between grid-cols-4">
                 <div class=" w-[300px] h-[239px] m-auto lg:m-0  ">
@@ -213,6 +216,6 @@
 
     </div>
 
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>

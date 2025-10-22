@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
 @import "tailwindcss";
 
 @theme {
@@ -17,4 +20,14 @@
     }
 }
 
+
+.box{
+    width:410px ;
+    background-color: rgb(182, 229, 248);
+}
+
+.box1{
+    width: 410px;
+    background-color: rgb(174, 211, 226);
+}
 
