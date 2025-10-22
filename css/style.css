@@ -214,11 +214,23 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-11 {
+    margin-top: calc(var(--spacing) * 11);
+  }
   .mt-\[20px\] {
     margin-top: 20px;
   }
   .mt-\[45px\] {
     margin-top: 45px;
+  }
+  .mt-auto {
+    margin-top: auto;
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -255,11 +267,30 @@
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-11 {
+    height: calc(var(--spacing) * 11);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-\[42px\] {
+    height: 42px;
+  }
+  .h-\[52px\] {
+    height: 52px;
   }
   .h-\[60px\] {
     height: 60px;
@@ -279,20 +310,56 @@
   .h-full {
     height: 100%;
   }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-11 {
+    width: calc(var(--spacing) * 11);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-33 {
+    width: calc(var(--spacing) * 33);
+  }
+  .w-\[3\%\] {
+    width: 3%;
+  }
+  .w-\[4\] {
+    width: 4;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[33\%\] {
+    width: 33%;
+  }
   .w-\[35\%\] {
     width: 35%;
+  }
+  .w-\[42px\] {
+    width: 42px;
   }
   .w-\[43\%\] {
     width: 43%;
   }
   .w-\[49\%\] {
     width: 49%;
+  }
+  .w-\[52px\] {
+    width: 52px;
   }
   .w-\[54\%\] {
     width: 54%;
@@ -312,11 +379,26 @@
   .w-\[290px\] {
     width: 290px;
   }
+  .w-\[414px\] {
+    width: 414px;
+  }
   .w-full {
     width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .rotate-0 {
+    rotate: 0deg;
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .rotate-\[1\] {
+    rotate: 1;
+  }
+  .rotate-\[180px\] {
+    rotate: 180px;
   }
   .resize {
     resize: both;
@@ -339,6 +421,9 @@
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
   }
+  .gap-x-4 {
+    column-gap: calc(var(--spacing) * 4);
+  }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
   }
@@ -353,6 +438,9 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .rounded-md {
     border-radius: var(--radius-md);
@@ -382,8 +470,14 @@
   .border-\[1g\] {
     border-color: 1g;
   }
+  .bg-\[\#\#2F57EF\] {
+    background-color: ##2F57EF;
+  }
   .bg-\[\#2F57EF\] {
     background-color: #2F57EF;
+  }
+  .bg-\[\#2f55ef4b\] {
+    background-color: #2f55ef4b;
   }
   .bg-\[\#25C6DA\] {
     background-color: #25C6DA;
@@ -400,11 +494,24 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-conic {
+    --tw-gradient-position: in oklab;
+    background-image: conic-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\.\.\/src\/images\/\)\] {
+    background-image: url(../src/images/);
+  }
   .bg-\[url\(\.\.\/src\/images\/aboutUs\.jpg\)\] {
     background-image: url(../src/images/aboutUs.jpg);
   }
   .bg-\[url\(\.\.\/src\/images\/bannerbg\.png\)\] {
     background-image: url(../src/images/bannerbg.png);
+  }
+  .bg-\[url\(\.\.\/src\/images\/clientReviewBg\)\] {
+    background-image: url(../src/images/clientReviewBg);
+  }
+  .bg-\[url\(\.\.\/src\/images\/clientReviewBg\.png\)\] {
+    background-image: url(../src/images/clientReviewBg.png);
   }
   .bg-cover {
     background-size: cover;
@@ -414,6 +521,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .p-\[34px\] {
+    padding: 34px;
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -435,6 +545,9 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .py-9 {
+    padding-block: calc(var(--spacing) * 9);
   }
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
@@ -542,6 +655,9 @@
   }
   .text-\[17px\] {
     font-size: 17px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .text-\[21px\] {
     font-size: 21px;
