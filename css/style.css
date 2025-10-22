@@ -117,7 +117,7 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
   img, video {
     max-width: 100%;
@@ -389,9 +389,9 @@
   .bg-\[\#F8BC26\] {
     background-color: #F8BC26;
   }
-  .bg-\[\#\] {
+  /* .bg-\[\#\] {
     background-color: #;
-  }
+  } */
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -613,9 +613,9 @@
   .text-\[\#4ADA85\] {
     color: #4ADA85;
   }
-  .text-\[\#\] {
+  /* .text-\[\#\] {
     color: #;
-  }
+  } */
   .text-\[17\] {
     color: 17;
   }
