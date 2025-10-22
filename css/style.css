@@ -1166,6 +1166,16 @@
       display: block;
     }
   }
+  .md\:flex {
+    @media (width >= 768px) {
+      display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 768px) {
+      display: none;
+    }
+  }
   .md\:inline-block {
     @media (width >= 768px) {
       display: inline-block;

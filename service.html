@@ -14,7 +14,7 @@
 <body class="dark:bg-gray-900 dark:text-gray-100">
     <!-- Header part -->
     <header class="bg-gray-100">
-        <div class="flex justify-between items-center text-darkMain py-2 header-container">
+        <div class="flex justify-between items-center text-darkMain py-2 header-container flex-col md:flex-row">
             <div class="">
                 <p><i class="fa-solid fa-location-dot mr-2"></i><span>6391 Elgin St. Celina, 10299</span></p>
             </div>
@@ -28,19 +28,18 @@
                         class="relative w-11 h-6 bg-gray-200  dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-secondary dark:peer-checked:bg-secondary">
                     </div>
                 </label>
-
             </div>
         </div>
         <nav class="bg-white py-3 dark:text-gray-900">
-            <div class="header-container flex justify-between items-center flex-col md:flex-row gap-5">
+            <div class="header-container flex justify-between items-center gap-5">
                 <div class="flex justify-between items-center gap-5 flex-col md:flex-row">
                     <a href="#"><img src="./src/images/logo.png" alt="Logo"></a>
-                    <ul class="font-medium flex gap-3 flex-wrap">
-                        <li class="duration-300 hover:text-secondary"><a href="#"><span>Home</span><i
+                    <ul class="hidden  font-medium md:flex gap-3 flex-wrap">
+                        <li class="duration-300 hover:text-secondary"><a href="./index.html"><span>Home</span><i
                                     class="fa-solid fa-angle-down"></i></a></li>
-                        <li class="duration-300 hover:text-secondary"><a href="#"><span>About Us</span><i
+                        <li class="duration-300 hover:text-secondary"><a href="./aboutUs.html"><span>About Us</span><i
                                     class="fa-solid fa-angle-down"></i></a></li>
-                        <li class="duration-300 hover:text-secondary"><a href="#"><span>Services</span><i
+                        <li class="duration-300 hover:text-secondary"><a href="./service.html"><span>Services</span><i
                                     class="fa-solid fa-angle-down"></i></a></li>
                         <li class="duration-300 hover:text-secondary"><a href="#"><span>Projects</span><i
                                     class="fa-solid fa-angle-down"></i></a></li>
@@ -48,11 +47,11 @@
                                     class="fa-solid fa-angle-down"></i></a></li>
                         <li class="duration-300 hover:text-secondary"><a href="#"><span>Page</span><i
                                     class="fa-solid fa-angle-down"></i></a></li>
-                        <li class="duration-300 hover:text-secondary"><a href="#"><span>Contact</span><i
+                        <li class="duration-300 hover:text-secondary"><a href="./contact.html"><span>Contact</span><i
                                     class="fa-solid fa-angle-down"></i></a></li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-3">
+                <div class="hidden md:flex items-center gap-3">
                     <input type="text" placeholder="Search" class="border border-gray-300 rounded-sm px-3 py-2">
                     <a href="#"
                         class="bg-secondary p-2 rounded-sm text-white duration-300 hover:text-secondary hover:bg-gray-100"><i
@@ -61,7 +60,26 @@
                         class="bg-gray-100 p-2 rounded-sm text-secondary duration-300 hover:text-white hover:bg-secondary"><i
                             class="fa-solid fa-cart-shopping"></i></a>
                 </div>
+                <!-- bar for mobile menu -->
+                <button id="menuBar" class="text-2xl cursor-pointer md:hidden"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
+            <!-- mobile menu -->
+            <ul id="mobileMenu" class="text-center space-y-2 hidden md:hidden">
+                <li class="duration-300 hover:text-secondary"><a href="./index.html"><span>Home</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+                <li class="duration-300 hover:text-secondary"><a href="./aboutUs.html"><span>About Us</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+                <li class="duration-300 hover:text-secondary"><a href="./service.html"><span>Services</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+                <li class="duration-300 hover:text-secondary"><a href="#"><span>Projects</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+                <li class="duration-300 hover:text-secondary"><a href="#"><span>Blog</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+                <li class="duration-300 hover:text-secondary"><a href="#"><span>Page</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+                <li class="duration-300 hover:text-secondary"><a href="./contact.html"><span>Contact</span><i
+                            class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
         </nav>
     </header>
     <main>
