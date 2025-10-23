@@ -8,9 +8,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -254,6 +254,13 @@
   .inline {
     display: inline;
   }
+  .table {
+    display: table;
+  }
+  .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -262,6 +269,12 @@
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
+  }
+  .h-\[13\] {
+    height: 13;
+  }
+  .h-\[16px\] {
+    height: 16px;
   }
   .h-\[55px\] {
     height: 55px;
@@ -274,6 +287,9 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-\[15px\] {
+    width: 15px;
   }
   .w-\[20\%\] {
     width: 20%;
@@ -290,8 +306,14 @@
   .w-\[80\%\] {
     width: 80%;
   }
+  .w-\[83px\] {
+    width: 83px;
+  }
   .w-\[143px\] {
     width: 143px;
+  }
+  .w-\[330px\] {
+    width: 330px;
   }
   .w-\[410px\] {
     width: 410px;
@@ -302,8 +324,14 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -316,6 +344,9 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -345,8 +376,14 @@
   .gap-x-3 {
     column-gap: calc(var(--spacing) * 3);
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -371,11 +408,23 @@
   .bg-\[\#2F57EF\] {
     background-color: #2F57EF;
   }
+  .bg-\[\#D9D9D9\] {
+    background-color: #D9D9D9;
+  }
   .bg-\[\#F8BC26\] {
     background-color: #F8BC26;
   }
   .bg-\[\#FCCC44\] {
     background-color: #FCCC44;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[url\"\(\/img\/mountains\.jpg\)\"\] {
+    background-color: url"(/img/mountains.jpg)";
+  }
+  .bg-\[url\'\(\/img\/mountains\.jpg\)\'\] {
+    background-color: url'(/img/mountains.jpg)';
   }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
@@ -389,6 +438,39 @@
   .bg-yellow-500 {
     background-color: var(--color-yellow-500);
   }
+  .bg-\[url\(\'\.\/Image\/Hero\.png\'\)\] {
+    background-image: url('./Image/Hero.png');
+  }
+  .bg-\[url\(\'\/\/Hero\.png\'\)\] {
+    background-image: url('//Hero.png');
+  }
+  .bg-\[url\(\'\/Image\/Hero\.png\'\)\] {
+    background-image: url('/Image/Hero.png');
+  }
+  .bg-\[url\(\'\/i\/Hero\.png\'\)\] {
+    background-image: url('/i/Hero.png');
+  }
+  .bg-\[url\(\'\/img\/Hero\.png\'\)\] {
+    background-image: url('/img/Hero.png');
+  }
+  .bg-\[url\(\'\/img\/Herog\'\)\] {
+    background-image: url('/img/Herog');
+  }
+  .bg-\[url\(\'\/img\/Hg\'\)\] {
+    background-image: url('/img/Hg');
+  }
+  .bg-\[url\(\'\/img\/mountains\.jpg\'\)\] {
+    background-image: url('/img/mountains.jpg');
+  }
+  .bg-\[url\(\'img\/mountains\.jpg\'\)\] {
+    background-image: url('img/mountains.jpg');
+  }
+  .bg-\[url\(\/\'img\/mountains\.jpg\'\)\] {
+    background-image: url(/'img/mountains.jpg');
+  }
+  .bg-\[url\(\/img\/mountains\.jpg\)\] {
+    background-image: url(/img/mountains.jpg);
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -397,6 +479,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -425,6 +510,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
@@ -445,6 +533,9 @@
   }
   .py-\[17px\] {
     padding-block: 17px;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .py-\[60px\] {
     padding-block: 60px;
@@ -513,6 +604,9 @@
   .text-\[21px\] {
     font-size: 21px;
   }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
   .text-\[38px\] {
     font-size: 38px;
   }
@@ -568,6 +662,10 @@
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:bg-yellow-600 {
     &:hover {
@@ -676,6 +774,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -697,6 +800,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
     }
   }
 }
