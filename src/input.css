@@ -19,13 +19,13 @@
 }
 
 .HeroBackground{
-    background-image: url(../Images/BannerLine.png);
+    background-image: url(/Images/BannerLine.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .footerImg{
-    background-image: url(../Images/Footer.png);
+    background-image: url(/Images/Footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
