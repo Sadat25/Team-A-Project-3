@@ -4,6 +4,7 @@
 
 @theme {
     --font-inter: "Inter", sans-serif;
+    --color-para: #192335;
     --breakpoint-*: initial;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
