@@ -9,10 +9,27 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1280px;
+    --color-headercolor: #F3F6FB;
 }
 
 @layer utility {
     .container {
         margin: auto;
     }
+}
+
+
+ .HeroBackground{
+    background-image: url(/images/BannerLine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ .footerBackground{
+    background-image: url(/images/Footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
