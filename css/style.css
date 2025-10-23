@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-<<<<<<< HEAD
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-600: oklch(66.6% 0.179 58.318);
@@ -28,11 +27,6 @@
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
-=======
-    --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
->>>>>>> cff06577716cc5de479c7c4a6481156206680adf
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -728,9 +722,6 @@
   .h-\[354px\] {
     height: 354px;
   }
-  .h-\[355px\] {
-    height: 355px;
-  }
   .h-\[387px\] {
     height: 387px;
   }
@@ -767,15 +758,12 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-<<<<<<< HEAD
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
   .w-6\/12 {
     width: calc(6/12 * 100%);
   }
-=======
->>>>>>> cff06577716cc5de479c7c4a6481156206680adf
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -1294,7 +1282,6 @@
   .bg-\[\#2F57EF\] {
     background-color: #2F57EF;
   }
-<<<<<<< HEAD
   .bg-\[\#2f55ef4b\] {
     background-color: #2f55ef4b;
   }
@@ -1351,15 +1338,10 @@
   }
   .bg-black {
     background-color: var(--color-black);
-=======
-  .bg-\[url-\(\.Images\/footer\.png\)\] {
-    background-color: url-(.Images/footer.png);
->>>>>>> cff06577716cc5de479c7c4a6481156206680adf
   }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
-<<<<<<< HEAD
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -1368,16 +1350,6 @@
   }
   .bg-cyan-100 {
     background-color: var(--color-cyan-100);
-=======
-  .bg-\[url\(\.\/Images\/footer\.png\)\] {
-    background-image: url(./Images/footer.png);
-  }
-  .bg-\[url\(\.Images\/footer\.png\)\] {
-    background-image: url(.Images/footer.png);
-  }
-  .bg-\[url\(\/Images\/footer\.png\)\] {
-    background-image: url(/Images/footer.png);
->>>>>>> cff06577716cc5de479c7c4a6481156206680adf
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -1426,6 +1398,9 @@
   }
   .bg-\[url\(\.\.\/src\/images\/footerBg\.png\)\] {
     background-image: url(../src/images/footerBg.png);
+  }
+  .bg-\[url\(\/Images\/footer\.png\)\] {
+    background-image: url(/Images/footer.png);
   }
   .bg-footer {
     background-image: var(--background-image-footer);
@@ -2083,13 +2058,6 @@
     --tw-outline-style: none;
     outline-style: none;
   }
-  .group-hover\:rotate-360 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        rotate: 360deg;
-      }
-    }
-  }
   .placeholder\:font-inter {
     &::placeholder {
       font-family: var(--font-inter);
@@ -2399,11 +2367,6 @@
   .md\:justify-center {
     @media (width >= 768px) {
       justify-content: center;
-    }
-  }
-  .md\:gap-x-6 {
-    @media (width >= 768px) {
-      column-gap: calc(var(--spacing) * 6);
     }
   }
   .md\:gap-x-\[50px\] {
@@ -2932,7 +2895,6 @@
       font-weight: var(--font-weight-bold);
     }
   }
-<<<<<<< HEAD
   .lg\:placeholder\:text-base {
     @media (width >= 992px) {
       &::placeholder {
@@ -3027,6 +2989,17 @@
       line-height: 54.12px;
     }
   }
+  .dark\:border {
+    @media (prefers-color-scheme: dark) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .dark\:border-gray-300 {
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-gray-300);
+    }
+  }
   .dark\:bg-\[\#0F172A\] {
     @media (prefers-color-scheme: dark) {
       background-color: #0F172A;
@@ -3040,32 +3013,6 @@
   .dark\:bg-blue-100 {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-blue-100);
-=======
-  .dark\:border {
-    &:where(.dark, .dark *) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
-  }
-  .dark\:border-gray-300 {
-    &:where(.dark, .dark *) {
-      border-color: var(--color-gray-300);
-    }
-  }
-  .dark\:bg-black {
-    &:where(.dark, .dark *) {
-      background-color: var(--color-black);
-    }
-  }
-  .dark\:text-black {
-    &:where(.dark, .dark *) {
-      color: var(--color-black);
-    }
-  }
-  .dark\:text-white {
-    &:where(.dark, .dark *) {
-      color: var(--color-white);
->>>>>>> cff06577716cc5de479c7c4a6481156206680adf
     }
   }
   .dark\:text-black {
@@ -3084,7 +3031,6 @@
     margin: auto;
   }
 }
-<<<<<<< HEAD
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -3125,8 +3071,6 @@
   inherits: false;
   initial-value: 0;
 }
-=======
->>>>>>> cff06577716cc5de479c7c4a6481156206680adf
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
