@@ -8,10 +8,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-cyan-100: oklch(95.6% 0.045 203.388);
-    --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
@@ -258,6 +258,9 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
@@ -325,11 +328,20 @@
   .bg-\[\#2F57EF\] {
     background-color: #2F57EF;
   }
+  .bg-\[url-\(\.Images\/footer\.png\)\] {
+    background-color: url-(.Images/footer.png);
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
-  .bg-cyan-100 {
-    background-color: var(--color-cyan-100);
+  .bg-\[url\(\.\/Images\/footer\.png\)\] {
+    background-image: url(./Images/footer.png);
+  }
+  .bg-\[url\(\.Images\/footer\.png\)\] {
+    background-image: url(.Images/footer.png);
+  }
+  .bg-\[url\(\/Images\/footer\.png\)\] {
+    background-image: url(/Images/footer.png);
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -483,9 +495,30 @@
       font-weight: var(--font-weight-bold);
     }
   }
-  .dark\:bg-blue-100 {
-    &:where([data-theme=dark], [data-theme=dark] *) {
-      background-color: var(--color-blue-100);
+  .dark\:border {
+    &:where(.dark, .dark *) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .dark\:border-gray-300 {
+    &:where(.dark, .dark *) {
+      border-color: var(--color-gray-300);
+    }
+  }
+  .dark\:bg-black {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-black);
+    }
+  }
+  .dark\:text-black {
+    &:where(.dark, .dark *) {
+      color: var(--color-black);
+    }
+  }
+  .dark\:text-white {
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
     }
   }
 }
@@ -493,14 +526,6 @@
   .container {
     margin: auto;
   }
-}
-.box {
-  width: 410px;
-  background-color: rgb(182, 229, 248);
-}
-.box1 {
-  width: 410px;
-  background-color: rgb(174, 211, 226);
 }
 @property --tw-border-style {
   syntax: "*";
