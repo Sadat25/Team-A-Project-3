@@ -1,16 +1,812 @@
 <!doctype html>
-<html>
+<html lang="en" id="html">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <section class="bg-[#F3F6FB]">
+        <div class="flex justify-between max-w-[1280px] mx-auto">
+            <div class="flex justify-between gap-2 items-center">
+                <img class="py-2" src="/image/loc.png" alt="loc">
+                <p class="text-[#192335] text-[12px]">6391 Elgin St. Celina, 10299</p>
+            </div>
+            <div class="flex justify-between gap-4 items-center">
+                <div class="flex justify-between gap-2 items-center">
+                    <img class="py-3" src="/image/phone.png" alt="phone">
+                    <p class="text-[#192335] text-[12px]">(629) 555-0129</p>
+                </div>
+                <div class="flex justify-between gap-2 items-center">
+                    <img class="py-3" src="/image/email.png" alt="email">
+                    <p class="text-[#192335] text-[12px]">info@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#FFFFFF]">
+        <div class="max-w-[1280px] mx-auto lg:flex items-center justify-between py-3">
+            <div class="">
+                <img src="src/images/Logo.png" alt="logo">
+            </div>
+            <div class="">
+                <ul class="lg:flex gap-5 text-[15]">
+                    <a href="./index.html">
+                        <li class="text-[#192335] cursor-pointer">Home</li>
+                    </a>
+                    <a href="./aboutUs.html">
+                        <li class="text-[#192335] cursor-pointer">About Us</li>
+                    </a>
+                    <a href="./service.html">
+                        <li class="text-[#192335] cursor-pointer">Services</li>
+                    </a>
+                    <a href="./serviceDetails.html">
+                        <li class="text-[#192335] cursor-pointer">Services Details</li>
+                    </a>
+                    <a href="./university.html">
+                        <li class="text-[#192335] cursor-pointer">University</li>
+                    </a>
+                    <a href="./BlogPage.html">
+                        <li class="text-[#192335] cursor-pointer">Blog</li>
+                    </a>
+                    <a href="./blogDetails.html">
+                        <li class="text-[#192335] cursor-pointer">Blog Details</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="text-[#192335] cursor-pointer">Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hidden  lg:flex justify-between gap-2 items-center">
+                <div class="">
+                    <input class=" py-2 pl-[10px] border border-[rgba(25,35,53,0.21)]" type="text" placeholder="Search">
+                </div>
+                <div class="flex gap-2">
+                    <img class="h-10" src="/image/search.png" alt="search">
+                    <img class="h-10" src="/image/cart.png" alt="cart">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-[1280px] mx-auto items-center">
+            <div class="lg:flex items-center text-center">
+                <div class=" lg:w-1/2 lg:pl-[100px]">
+                    <h1 class="font-inter font-extrabold lg:text-[46px] text-[26px] text-[#192335]">Expand Your Horizons
+                        through <span class="text-[#2F57EF]">Education</span></h1>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="font-inter text-[18px] lg:pb-[40px] pb-[10px]">Education for a Better Tomorrow.</h3>
+                    <a class="py-[10px] px-[25px] border border-[#25C6DA] hover:bg-[#25C6DA]" href="#">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex pt-[40px] gap-5">
+                <div class="">
+                    <div class="py-[10px]"><img src="/image/banOne.jpg" alt=""></div>
+                    <div class="">
+                        <img src="/image/banTwo.jpg" alt="">
+                    </div>
+                </div>
+                <div class="py-[10px]">
+                    <img src="/image/banThree.jpg" alt="">
+                </div>
+                <div class="">
+                    <img src="/image/banFour.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-[1280px] mx-auto lg:flex justify-between">
+            <div
+                class="h-[300px] w-[250px] text-center bg-[#ffffff] shadow-xl/30 py-[50px] md:mx-auto lg:my-0 my-[20px]">
+                <img class=" mx-auto" src="/image/cardOne.jpg" alt="one">
+                <h3 class="font-inter text-[22px] font-bold">Future Focus</h3>
+                <p class="font-inter text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, enim.
+                </p>
+            </div>
+            <div
+                class="h-[300px] w-[250px] text-center bg-[#ffffff] shadow-xl/30 py-[50px] md:mx-auto lg:my-0 my-[20px]">
+                <img class=" mx-auto" src="/image/cardTwo.jpg" alt="">
+                <h3 class="font-inter text-[22px] font-bold">Smart Scholars</h3>
+                <p class="font-inter text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, enim.
+                </p>
+            </div>
+            <div
+                class="h-[300px] w-[250px] text-center bg-[#ffffff] shadow-xl/30 py-[50px] md:mx-auto lg:my-0 my-[20px]">
+                <img class=" mx-auto" src="/image/cardThree.jpg" alt="">
+                <h3 class="font-inter text-[22px] font-bold">Knowledge Hub</h3>
+                <p class="font-inter text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, enim.
+                </p>
+            </div>
+            <div
+                class="h-[300px] w-[250px] text-center bg-[#ffffff] shadow-xl/30 py-[50px] md:mx-auto lg:my-0 my-[20px]">
+                <img class=" mx-auto" src="/image/cardFour.jpg" alt="">
+                <h3 class="font-inter text-[22px] font-bold"> Learning Pathways</h3>
+                <p class="font-inter text-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, enim.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-[1280px] mx-auto py-[100px]">
+        <div class="lg:flex justify-between">
+            <div class="lg:w-2/3 w-100%">
+                <img src="/image/about.png" alt="">
+            </div>
+            <div class="lg:w-1/3 w-100%">
+                <div class="">
+                    <p class="text-[#2F57EF] pb-[10px]">Top Popular Course</p>
+                    <h3 class="font-inter text-[36px] font-bold">Knowledge is power education is the key</h3>
+                    <p class="py-[30px]">Education is the process of acquiring knowledge, skills, values, and attitudes
+                        through various methods such as teaching, training</p>
+                </div>
+                <div class="">
+                    <div class="">
+                        <div class="flex gap-3">
+                            <img src="/image/sign.png" alt="">
+                            <h5 class="font-inter text-[18px] font-bold">Smart Scholars</h5>
+                        </div>
+                        <p class="font-inter py-[20px] pl-[40px]">The goal of ecology is to understand how organisms
+                            interact with each other </p>
+                    </div>
+                    <div class="">
+                        <div class="flex gap-3">
+                            <img src="/image/sign.png" alt="">
+                            <h5 class="font-inter text-[18px] font-bold">Knowledge Hub</h5>
+                        </div>
+                        <p class="font-inter py-[20px] pl-[40px]">Ecologists use a variety of methods, such as field
+                            observa
+                            tions, experiments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- riat -->
+
+    <!-- tawsif -->
+
+    <div class="container mx-auto  px-5 xl:px-0 ">
+
+        <div class="text-[#2F57EF] mt-12 font-bold text-[16px] lg:text-[18px] font-inter">
+            <p>Services we’re offering</p>
+        </div>
+        <div class="mt-3 flex justify-between ">
+            <p class="xl:leading-[54.12px] text-[#192335] font-bold text-[30px] lg:text-[42px] font-inter">
+                Navigating
+                your path <br>to
+                success</p>
+            <div class="flex items-end">
+                <div class="flex mt-8 gap-4">
+                    <div
+                        class="h-10 w-10  flex items-center justify-center text-black border-1 border-black rounded-full">
+                        <i class="fa-solid fa-arrow-left "></i>
+                    </div>
+                    <div
+                        class="h-10 w-10  flex items-center justify-center text-black border-1 border-black rounded-full">
+                        <i class="fa-solid fa-arrow-right "></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-10 xl:py-20 flex gap-4">
+            <div class="w-2/4 lg:w-1/4 bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div
+                            class="bg-[#D9D9D9] h-[40px] w-[40px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px] rounded-full ">
+                        </div>
+                        <p class="pl-3 lg:pl-1 xl:pl-3">By Angela</p>
+                    </div>
+                    <div class="flex items-center gap-3 lg:gap-1 xl:gap-3">
+                        <i class="fa-solid fa-user text-[#2F57EF]"></i>
+                        <p>50 Students</p>
+                    </div>
+                </div>
+                <div class="mt-4 mb-3 w-full flex items-end h-60 bg-[#D9D9D9]">
+                    <div class="flex justify-end w-full pr-3 pb-3">
+                        <h3 class="bg-[#2F57EF] w-28 text-white font-[500] text-center py-2 text-[13px] font-inter">
+                            Development
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="text-[#FF9747]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#6B7385] font-[500]  text-[12px] font-inter">(15 Reviews)</p>
+                </div>
+                <div class="text-[#192335] my-4 font-[700]  text-[18px]   xl:text-[25px] leading-[32.5px] font-inter">
+                    The Power of
+                    Personal <br> Branding</div>
+                <div class="items-center text-[#2F57EF] gap-3">Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="w-2/4 lg:w-1/4 bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div
+                            class="bg-[#D9D9D9] h-[40px] w-[40px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px] rounded-full ">
+                        </div>
+                        <p class="pl-3 lg:pl-1 xl:pl-3">By Angela</p>
+                    </div>
+                    <div class="flex items-center gap-3 lg:gap-1 xl:gap-3">
+                        <i class="fa-solid fa-user text-[#2F57EF]"></i>
+                        <p>50 Students</p>
+                    </div>
+                </div>
+                <div class="mt-4 mb-3 w-full flex items-end h-60 bg-[#D9D9D9]">
+                    <div class="flex justify-end w-full pr-3 pb-3">
+                        <h3 class="bg-[#2F57EF] w-28 text-white font-[500] text-center py-2 text-[13px] font-inter">
+                            Development
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="text-[#FF9747]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#6B7385] font-[500]  text-[12px] font-inter">(15 Reviews)</p>
+                </div>
+                <div class="text-[#192335] my-4 font-[700]  text-[18px]   xl:text-[25px] leading-[32.5px] font-inter">
+                    The Power of
+                    Personal <br> Branding</div>
+                <div class="items-center text-[#2F57EF] gap-3">Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class=" hidden lg:block w-2/4 lg:w-1/4 bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div
+                            class="bg-[#D9D9D9] h-[40px] w-[40px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px] rounded-full ">
+                        </div>
+                        <p class="pl-3 lg:pl-1 xl:pl-3">By Angela</p>
+                    </div>
+                    <div class="flex items-center gap-3 lg:gap-1 xl:gap-3">
+                        <i class="fa-solid fa-user text-[#2F57EF]"></i>
+                        <p>50 Students</p>
+                    </div>
+                </div>
+                <div class="mt-4 mb-3 w-full flex items-end h-60 bg-[#D9D9D9]">
+                    <div class="flex justify-end w-full pr-3 pb-3">
+                        <h3 class="bg-[#2F57EF] w-28 text-white font-[500] text-center py-2 text-[13px] font-inter">
+                            Development
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="text-[#FF9747]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#6B7385] font-[500]  text-[12px] font-inter">(15 Reviews)</p>
+                </div>
+                <div class="text-[#192335] my-4 font-[700] text-[18px]   xl:text-[25px] leading-[32.5px] font-inter">
+                    The
+                    Power of
+                    Personal <br> Branding</div>
+                <div class="items-center text-[#2F57EF] gap-3">Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="hidden lg:block w-2/4 lg:w-1/4 bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div
+                            class="bg-[#D9D9D9] h-[40px] w-[40px] lg:h-[30px] lg:w-[30px] xl:h-[40px] xl:w-[40px] rounded-full ">
+                        </div>
+                        <p class="pl-3 lg:pl-1 xl:pl-3">By Angela</p>
+                    </div>
+                    <div class="flex items-center gap-3 lg:gap-1 xl:gap-3">
+                        <i class="fa-solid fa-user text-[#2F57EF]"></i>
+                        <p>50 Students</p>
+                    </div>
+                </div>
+                <div class="mt-4 mb-3 w-full flex items-end h-60 bg-[#D9D9D9]">
+                    <div class="flex justify-end w-full pr-3 pb-3">
+                        <h3 class="bg-[#2F57EF] w-28 text-white font-[500] text-center py-2 text-[13px] font-inter">
+                            Development
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="text-[#FF9747]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#6B7385] font-[500]  text-[12px] font-inter">(15 Reviews)</p>
+                </div>
+                <div class="text-[#192335] my-4 font-[700]  text-[18px]   xl:text-[25px] leading-[32.5px] font-inter">
+                    The Power of
+                    Personal <br> Branding</div>
+                <div class="items-center text-[#2F57EF] gap-3">Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="py-10 xl:py-20 flex gap-4">
+            <div class="w-2/4 lg:hidden bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-[#D9D9D9] h-[40px] w-[40px] rounded-full "></div>
+                        <p class="pl-3">By Angela</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-user text-[#2F57EF]"></i>
+                        <p>50 Students</p>
+                    </div>
+                </div>
+                <div class="mt-4 mb-3 w-full flex items-end h-60 bg-[#D9D9D9]">
+                    <div class="flex justify-end w-full pr-3 pb-3">
+                        <h3 class="bg-[#2F57EF] w-28 text-white font-[500] text-center py-2 text-[13px] font-inter">
+                            Development
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="text-[#FF9747]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#6B7385] font-[500]  text-[12px] font-inter">(15 Reviews)</p>
+                </div>
+                <div class="text-[#192335] my-4 font-[700]  text-[18px]   xl:text-[25px] leading-[32.5px] font-inter">
+                    The Power of
+                    Personal <br> Branding</div>
+                <div class="items-center text-[#2F57EF] gap-3">Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="w-2/4 lg:hidden bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-[#D9D9D9] h-[40px] w-[40px] rounded-full "></div>
+                        <p class="pl-3">By Angela</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-user text-[#2F57EF]"></i>
+                        <p>50 Students</p>
+                    </div>
+                </div>
+                <div class="mt-4 mb-3 w-full flex items-end h-60 bg-[#D9D9D9]">
+                    <div class="flex justify-end w-full pr-3 pb-3">
+                        <h3 class="bg-[#2F57EF] w-28 text-white font-[500] text-center py-2 text-[13px] font-inter">
+                            Development
+                        </h3>
+                    </div>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <div class="text-[#FF9747]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[#6B7385] font-[500]  text-[12px] font-inter">(15 Reviews)</p>
+                </div>
+                <div class="text-[#192335] my-4 font-[700]  text-[18px]   xl:text-[25px] leading-[32.5px] font-inter">
+                    The Power of
+                    Personal <br> Branding</div>
+                <div class="items-center text-[#2F57EF] gap-3">Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-4 my-10">
+            <div class=" lg:w-3/7 hidden lg:block">
+                <img src="images/one.png" width="400" alt="">
+            </div>
+            <div class="w-full lg:w-4/7 bg-white shadow-xl flex justify-center items-center  font-inter">
+                <div class="w-full max-w-md md:max-w-2xl p-6">
+                    <div class="mb-6 text-center">
+                        <p class="text-sm font-medium text-[#2F57EF] uppercase tracking-wide">Get in Touch</p>
+                        <h2 class="text-3xl md:text-4xl font-semibold mt-2">
+                            Bringing your <span class="text-[#2F57EF] font-bold">vision</span> to life
+                        </h2>
+                    </div>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name"
+                                class="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:border-[#2F57EF]" />
+                            <input type="email" placeholder="Your Email"
+                                class="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:border-[#2F57EF]" />
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Phone Number"
+                                class="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:border-[#2F57EF]" />
+                            <input type="text" placeholder="Subject"
+                                class="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:border-[#2F57EF]" />
+                        </div>
+
+                        <textarea placeholder="Message" rows="5"
+                            class="border border-gray-300 rounded-md px-4 py-3 w-full focus:outline-none focus:border-[#2F57EF]"></textarea>
+
+                        <button type="submit"
+                            class="w-full bg-[#2F57EF] text-white text-sm font-medium py-3 rounded-md hover:bg-[#2241d6] transition">
+                            Submit now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="w-1/5 flex justify-center items-center ">
+                <img src="images/Group one.png" alt="">
+            </div>
+            <div class="w-1/5 flex justify-center items-center ">
+                <img src="images/Group two.png" alt="">
+            </div>
+            <div class="w-1/5 flex justify-center items-center ">
+                <img src="images/Group thre.png" alt="">
+            </div>
+            <div class="w-1/5 flex justify-center items-center ">
+                <img src="images/Group four.png" alt="">
+            </div>
+            <div class="w-1/5 flex justify-center items-center ">
+                <img src="images/Group five.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="block xl:hidden mt-7">
+        <img src="images/info.png" alt="">
+    </div>
+    <div class="bg-[url('../images/bg.png')] bg-cover bg-center mt-0 xl:mt-60  pt-10 xl:pt-60 pb-[50px]">
+        <div class=" relative container items-center xl:flex gap-5">
+            <div class="w-full text-center xl:text-left xl:w-1/3 mb-18 xl:mb-0">
+                <h3 class="text-[#FFFFFF] text-[18px] font-inter font-bold">Testimonials</h3>
+                <h4 class="mt-4 text-[#FFFFFF] text-[42px] leading-[54.12px] font-inter font-bold">Advanced Engine
+                    Services</h4>
+                <p class="mt-4 text-[#FFFFFF] text-[17px] leading-[26.1px] font-inter font-[400]">Education is the
+                    process of acquiring knowledge, skills, values,<br class="block xl:hidden" /> and attitudes
+                    through
+                    various
+                    methods such as teaching, </p>
+                <div class="flex mt-8 gap-4">
+                    <div
+                        class="h-10 w-10  flex items-center justify-center text-white border-1 border-amber-50 rounded-full">
+                        <i class="fa-solid fa-arrow-left "></i>
+                    </div>
+                    <div
+                        class="h-10 w-10  flex items-center justify-center text-white border-1 border-amber-50 rounded-full">
+                        <i class="fa-solid fa-arrow-right "></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full xl:w-2/3">
+                <div class="flex gap-1 lg:gap-4">
+                    <div class="w-1/3 relative p-2 lg:p-4 bg-[#FFFFFF] text-center">
+                        <h3 class="text-[#192335] mt-8 text-[21px] font-inter font-bold">Devon Lane</h3>
+                        <h4 class="text-[#192335] text-[17px] font-inter font-[400]">President of Sales</h4>
+                        <p class="text-[#192335] text-[14px] lg:text-[17px] font-inter font-[400] mt-4">Web
+                            designing in
+                            a powerful way
+                            of just not an only professions, however, in a passion for
+                            our Company.</p>
+                        <div class="text-[#FFBA08] text-[10px] lg:text-[14px] mt-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div
+                            class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-[#D9D9D9]">
+                        </div>
+                    </div>
+                    <div class="w-1/3 relative p-2 lg:p-4 bg-[#FFFFFF] text-center">
+                        <h3 class="text-[#192335] mt-8 text-[21px] font-inter font-bold">Devon Lane</h3>
+                        <h4 class="text-[#192335] text-[17px] font-inter font-[400]">President of Sales</h4>
+                        <p class="text-[#192335] text-[14px] lg:text-[17px] font-inter font-[400] mt-4">Web
+                            designing in
+                            a powerful way
+                            of just not an only professions, however, in a passion for
+                            our Company.</p>
+                        <div class="text-[#FFBA08] text-[10px] lg:text-[14px] mt-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div
+                            class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-[#D9D9D9]">
+                        </div>
+                    </div>
+                    <div class="w-1/3 relative p-2 lg:p-4 bg-[#FFFFFF] text-center">
+                        <h3 class="text-[#192335] mt-8 text-[21px] font-inter font-bold">Devon Lane</h3>
+                        <h4 class="text-[#192335] text-[17px] font-inter font-[400]">President of Sales</h4>
+                        <p class="text-[#192335] text-[14px] lg:text-[17px] font-inter font-[400] mt-4">Web
+                            designing in
+                            a powerful way
+                            of just not an only professions, however, in a passion for
+                            our Company.</p>
+                        <div class="text-[#FFBA08] text-[10px] lg:text-[14px] mt-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div
+                            class="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-[#D9D9D9]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden xl:block absolute -top-99 left-0">
+                <img src="images/info.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script src="tailwind.config.js"></script>
+
+    <!-- tawsif -->
+
+
+    <!-- rezwana -->
+
+    <div class=" dark:bg-black dark:text-white">
+        <div class="container ">
+            <div class="lg:flex lg:justify-between grid-cols-2">
+                <img src="./Images/illu.png" alt="">
+                <div class="lg:w-[520px] lg:h-[457px]  mt-[54px]">
+                    <h2 class="lg:text-[18px] lg:font-bold   font-inter text-[#2F57EF] lg:pl-0 pl-8 ">Top Popular Course
+                    </h2>
+                    <h1 class="lg:text-[42px] lg:font-bold font-inter pt-5 lg:pl-0 pl-8 ">Knowledge is power education
+                        is
+                        the key</h1>
+                    <p class="text-[17px] font-inter pt-5 lg:pl-0 pl-8 ">Education is the process of acquiring
+                        knowledge,
+                        skills, values, and attitudes through various methods such as teaching, training, or research.
+                        It
+                        plays a crucial role in </p>
+                    <div class="pt-10 lg:pl-0 pl-8">
+                        <div class="flex gap-2 items-center">
+                            <img src="./Images/icon.png" class="w-[20px] h-[20px] " alt="">
+                            <h2 class="text-[17px] font-inter ">education is the key</h2>
+                        </div>
+                        <div class="flex gap-2 items-center pt-4">
+                            <img src="./Images/icon.png" class="w-[20px] h-[20px] " alt="">
+                            <h2 class="text-[17px] font-inter ">A Whole Lot of Digital Love for Less</h2>
+                        </div>
+                        <div class="flex gap-2 items-center pt-4">
+                            <img src="./Images/icon.png" class="w-[20px] h-[20px] " alt="">
+                            <h2 class="text-[17px] font-inter ">Know what your target market wants and needs</h2>
+                        </div>
+                        <div class="flex gap-2 items-center pt-4">
+                            <img src="./Images/icon.png" class="w-5 h-[20px] " alt="">
+                            <h2 class="text-[17px] font-inter ">A Whole Lot of Digital Love for Less</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-[111px]">
+                <div class="text-center">
+                    <h2 class="text-[#2F57EF] text-[18px] font-bold font-inter ">Blog & Artical </h2>
+                    <h1 class="lg:text-[42px] font-inter lg:font-bold">Business strategy is the plan <span
+                            class="block">and
+                            actions</span> </h1>
+                </div>
+                <div class="flex justify-center items-center mt-3">
+                    <button id="btn" class="bg-blue-500 px-5 py-2 text-[28px] rounded-[5px] text-white  ">click</button>
+                </div>
+
+                <div class="lg:flex lg:justify-between grid-cols-3 mt-[51px]   ">
+
+                    <div class="w-[410px] shadow-xl dark:border-gray-300 dark:border ">
+                        <div class="relative">
+                            <img src="./Images/book1.jpg" class="" alt="">
+                            <div class="w-20 h-20 bg-[#2F57EF] absolute top-5 left-5 ">
+                                <h2 class="text-[21px] font-bold font-inter text-white text-center pt-2">21</h2>
+                                <h2 class="text-[21px] font-bold font-inter text-white text-center">FEB</h2>
+                            </div>
+                        </div>
+                        <div class="px-7.5 py-7.5 pt-7.5">
+                            <div class="flex gap-4">
+                                <div class="flex gap-2 items-center">
+                                    <img src="./Images/icon2.png" class="w-4 h-4" alt="">
+                                    <h3 class="text-[17px] font-inter text-center">Category</h3>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <img src="./Images/icon3.png" class="w-4 h-4" alt="">
+                                    <h3 class="text-[17px] font-inter text-center">Comments (05)</h3>
+                                </div>
+                            </div>
+                            <h1 class="text-[21px] font-bold font-inter pt-5 ">Corporate culture refers to the values
+                                beliefs Manket</h1>
+                            <p class="text-[17px] font-inter pt-5 ">Contrary to popular belief, Lorem Ipsum is not
+                                simply
+                                random text many kindsman ontrary to popular belief Lorem Ipsum.</p>
+                            <div class="flex gap-4 pt-[35px] items-center ">
+                                <h2 class="font-medium font-inter">Read more</h2>
+                                <img src="./Images/icon4.png" class="w-4 h-4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[410px] shadow-xl dark:border-gray-300 dark:border  ">
+                        <div class="relative">
+                            <img src="./Images/book2.jpg" class="" alt="">
+                            <div class="w-20 h-20 bg-[#2F57EF] absolute top-5 left-5 ">
+                                <h2 class="text-[21px] font-bold font-inter text-white text-center pt-2">21</h2>
+                                <h2 class="text-[21px] font-bold font-inter text-white text-center">FEB</h2>
+                            </div>
+                        </div>
+                        <div class="px-7.5 py-7.5 pt-7.5">
+                            <div class="flex gap-4">
+                                <div class="flex gap-2 items-center">
+                                    <img src="./Images/icon2.png" class="w-4 h-4" alt="">
+                                    <h3 class="text-[17px] font-inter text-center">Category</h3>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <img src="./Images/icon3.png" class="w-4 h-4" alt="">
+                                    <h3 class="text-[17px] font-inter text-center">Comments (05)</h3>
+                                </div>
+                            </div>
+                            <h1 class="text-[21px] font-bold font-inter pt-5 ">Corporate culture refers to the values
+                                beliefs Manket</h1>
+                            <p class="text-[17px] font-inter pt-5 ">Contrary to popular belief, Lorem Ipsum is not
+                                simply
+                                random text many kindsman ontrary to popular belief Lorem Ipsum.</p>
+                            <div class="flex gap-4 pt-[35px] items-center ">
+                                <h2 class="font-medium font-inter">Read more</h2>
+                                <img src="./Images/icon4.png" class="w-4 h-4" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[410px] shadow-xl dark:border-gray-300 dark:border ">
+                        <div class="relative">
+                            <img src="./Images/book1.jpg" class="" alt="">
+                            <div class="w-20 h-20 bg-[#2F57EF] absolute top-5 left-5 ">
+                                <h2 class="text-[21px] font-bold font-inter text-white text-center pt-2">21</h2>
+                                <h2 class="text-[21px] font-bold font-inter text-white text-center">FEB</h2>
+                            </div>
+                        </div>
+                        <div class="px-7.5 py-7.5 pt-7.5">
+                            <div class="flex gap-4">
+                                <div class="flex gap-2 items-center">
+                                    <img src="./Images/icon2.png" class="w-4 h-4" alt="">
+                                    <h3 class="text-[17px] font-inter text-center">Category</h3>
+                                </div>
+                                <div class="flex gap-2 items-center">
+                                    <img src="./Images/icon3.png" class="w-4 h-4" alt="">
+                                    <h3 class="text-[17px] font-inter text-center">Comments (05)</h3>
+                                </div>
+                            </div>
+                            <h1 class="text-[21px] font-bold font-inter pt-5 ">Corporate culture refers to the values
+                                beliefs Manket
+                            </h1>
+                            <p class="text-[17px] font-inter pt-5 ">Contrary to popular belief, Lorem Ipsum is not
+                                simply
+                                random text
+                                many kindsman ontrary to popular belief Lorem Ipsum.</p>
+                            <div class="flex gap-4 pt-[35px] items-center ">
+                                <h2 class="font-medium font-inter">Read more</h2>
+                                <img src="./Images/icon4.png" class="w-4 h-4" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class=" bg-[url(/Images/footer.png)] w-full mt-[121px]  ">
+
+            <div class="container pt-[95px] ">
+                <div class="lg:flex lg:justify-between grid-cols-4 dark:text-black">
+                    <div class=" w-[300px] h-[239px] m-auto lg:m-0  ">
+                        <div class=" flex gap-3 items-center ">
+                            <img src="./Images/Open book.png" class="w-8 h-8" alt="">
+                            <h1 class="text-[30px] font-bold font-inter">Escola</h1>
+                        </div>
+                        <p class="text-[18px] font-inter leading-8 pt-[22px]">Lorem Ipsum is simply dummy texis the
+                            printing
+                            Lorem Ips
+                            is simply dummy text</p>
+                        <div class="flex gap-2.5 pt-[42px]">
+                            <img src="./Images/twitter.png" alt="">
+                            <img src="./Images/fb.png" alt="">
+                            <img src="./Images/inst.png" alt="">
+                            <img src="./Images/p.png" alt="">
+                        </div>
+                    </div>
+                    <div class="w-[229px] h-[190px] m-auto lg:m-0 ">
+                        <h1 class="text-[21px] font-bold font-inter">All Links</h1>
+                        <div class="flex gap-3 items-center pt-[26px]">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Credit industrys</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Credit industrys</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Credit industrys</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Credit industrys</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-[173px] h-[225px] m-auto lg:m-0 ">
+                        <h1 class="text-[21px] font-bold font-inter">More Servicve</h1>
+                        <div class="flex gap-3 items-center pt-[26px]">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Ui Design</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Ux Design</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Digital Marketing</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Video Editing</h2>
+                        </div>
+                        <div class="flex gap-3 items-center pt-2">
+                            <img src="./Images/icon5.png" class="w-[13px] h-[13px]" alt="">
+                            <h2 class="text-[17px] font-inter">Pc Repairs</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-[300px] h-[187px] m-auto lg:m-0 ">
+                        <h1 class="text-[21px] font-bold font-inter">Get In Touch</h1>
+                        <p class="text-[17px] font-inter pt-[26px]">E-mail:example@mail.com</p>
+                        <h2 class="text-[17px] font-inter pt-2.5">Call:+125 856 632</h2>
+                        <p class="text-[17px] font-inter pt-2.5">Location:3 Number Road ,C block, Housing,USA</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-2 border-gray-400 mt-25 "></div>
+            <div class=" container grid-cols-2 lg:flex lg:justify-between pt-7.5 pb-[36px] lg:pl-0 pl-8 ">
+                <div>© Yoursitename 2023 | All Rights Reserved</div>
+                <div class="lg:flex lg:gap-[48px]">
+                    <h2>Trams & Condition</h2>
+                    <h2>Privacy Policy</h2>
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- rezwana -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
